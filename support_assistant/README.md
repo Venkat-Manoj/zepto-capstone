@@ -107,3 +107,8 @@ docker run --rm -p 7860:7860 zepto-support-assistant
 ```
 
 The image installs the support-assistant requirements, ingests the eight policy chunks during image build, and starts FastAPI on port 7860. The container is the required local baseline; no cloud deployment is required.
+
+
+## Final Verification
+
+The required offline mock-mode examples were executed successfully and returned HTTP 200 responses for both the policy and general-question test cases.
