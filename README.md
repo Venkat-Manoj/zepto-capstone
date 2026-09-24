@@ -156,3 +156,7 @@ python verify_project.py
 ```
 
 The static check confirms the required source files, eight exact policy-document files, Dockerfile, requirements files, and committed Titanic fallback are present. The live-scrape, local embedding/Chroma, API, and Docker requirements are verified by running the module commands above in the submission environment.
+
+## Final Verification
+
+The required runtime checks were completed locally before submission. The Data Pipeline generated the required cleaned dataset, SQLite database, and SQL query/output evidence. The Support Assistant embedded all 8 policy documents and the required mock-mode examples returned HTTP 200 responses with the expected structured fields.
