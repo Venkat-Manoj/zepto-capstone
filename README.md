@@ -156,3 +156,16 @@ python verify_project.py
 ```
 
 The static check confirms the required source files, eight exact policy-document files, Dockerfile, requirements files, and committed Titanic fallback are present. The live-scrape, local embedding/Chroma, API, and Docker requirements are verified by running the module commands above in the submission environment.
+
+
+
+## Final Runtime Verification
+
+Local execution completed successfully before submission.
+
+- Data Pipeline: 69 books scraped across 3 categories.
+- Data Pipeline outputs: `data_pipeline/outputs/cleaned_books.csv` and `data_pipeline/outputs/sql_outputs.md`.
+- SQLite database generated at `data_pipeline/zepto_catalog.db`.
+- Support Assistant: all 8 policy documents embedded into the `zepto_policy` ChromaDB collection.
+- Support Assistant mock-mode example calls returned HTTP 200 and were recorded in `support_assistant/example_responses.json` and the module README.
+- Project verification reported that static files and runtime evidence are present.
